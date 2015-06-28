@@ -1,0 +1,23 @@
+{
+    "name": "anomaly/rackspace_opencloud-extension",
+    "type": "streams-addon",
+    "description": "Easily integrate Rackspace/OpenStack APIs into your Streams Platform projects.",
+    "authors": [
+        {
+            "name": "AnomalyLabs",
+            "email": "hello@anomaly.is"
+        }
+    ],
+    "require": {
+        "rackspace/php-opencloud": "1.14.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Anomaly\\RackspaceOpencloudExtension\\": "src/",
+            "mikemccabe\\JsonPatch\\": "vendor/mikemccabe/json-patch-php/src"
+        },
+        "psr-0": {
+            "OpenCloud": "vendor/rackspace/php-opencloud/lib/"
+        }
+    }
+}
